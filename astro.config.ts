@@ -72,6 +72,16 @@ export default defineConfig({
   ],
   vite: {
     plugins: [tailwindcss()],
+    server: {
+      fs: {
+        strict: false
+      }
+    },
+    build: {
+      rollupOptions: {
+        maxParallelFileOps: 2
+      }
+    }
   },
   server: {
     port: 1234,
