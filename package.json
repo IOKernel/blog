@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "sharp": "^0.33.5",
     "@astrojs/markdown-remark": "^6.3.1",
     "@astrojs/mdx": "^4.2.6",
     "@astrojs/react": "^4.2.7",
@@ -42,6 +41,7 @@
     "rehype-pretty-code": "^0.14.1",
     "remark-emoji": "^5.0.1",
     "remark-math": "^6.0.0",
+    "sharp": "^0.33.5",
     "tailwind-merge": "^3.3.0",
     "tailwindcss": "^4.1.7",
     "typescript": "^5.8.3"
@@ -50,7 +50,8 @@
     "prettier": "^3.5.1",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-astro-organize-imports": "^0.4.11",
-    "prettier-plugin-tailwindcss": "^0.6.11"
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "wrangler": "^4.20.5"
   },
   "prettier": {
     "semi": false,
