@@ -45,7 +45,7 @@ importers:
         specifier: 19.0.0
         version: 19.0.0
       astro:
-        specifier: ^5.7.13
+        specifier: ^5.10.0
         version: 5.10.0(@types/node@24.0.3)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.44.0)(typescript@5.8.3)(yaml@2.8.0)
       astro-expressive-code:
         specifier: ^0.40.2
