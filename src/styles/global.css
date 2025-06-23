@@ -4,10 +4,10 @@
 
 @theme inline {
   --font-sans:
-    Geist, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+  Dyslexic, Geist, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-mono:
-    Geist Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+  Geist Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     'Liberation Mono', 'Courier New', monospace;
 
   --color-background: var(--background);
@@ -51,35 +51,61 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Dyslexic';
+  src: url('/fonts/Dyslexic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dyslexic';
+  src: url('/fonts/Dyslexic-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dyslexic';
+  src: url('/fonts/Dyslexic-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  /* #f6eee1 */
+  --background: oklch(0.9518 0.0193 80.12); 
+  --foreground: oklch(0.2926 0.0881 252.74);
+  --primary: oklch(39.938% 0.09567 251.91);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.8912 0.0584 81.43);
+  --secondary-foreground: oklch(39.938% 0.09567 251.91);
+  --muted: oklch(0.8912 0.0584 81.43);
+  --muted-foreground: oklch(44.642% 0.06507 249.493 / 0.587);
+  --accent: oklch(0.6184 0.1902 29.84);
+  --accent-foreground: oklch(39.938% 0.09567 251.91);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --border: oklch(0.7444 0.0831 25.77);
+  --ring: oklch(0.7444 0.0831 25.77);
 }
 
 [data-theme='dark'] {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
+  --background: oklch(0.2744 0.031 268.43);
+  --foreground: oklch(0.9455 0.0087 264.52);
+  /* --foreground: oklch(0.7023 0.200362 45.0447) */
   --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
+  --primary-foreground: oklch(0.3234 0.0588 269.36 / 74.9%);
+  --secondary: oklch(0.3734 0.0588 269.36 / 74.9%);
+  --secondary-foreground: oklch(0.9455 0.0087 264.52);
+  --muted: oklch(0.3734 0.0588 269.36 / 74.9%);
   --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
+  --accent: oklch(0.7023 0.200362 45.0447);
+  --accent-foreground: oklch(0.9455 0.0087 264.52);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
+  --border: oklch(0.5292 0.1428 47.06);
   --ring: oklch(0.556 0 0);
 }
 
