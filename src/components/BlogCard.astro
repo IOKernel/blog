@@ -41,13 +41,16 @@ const subpostCount = !isSubpost(entry.id) ? await getSubpostCount(entry.id) : 0
             width={1200}
             height={630}
             class="object-cover"
+            transition:name={`${entry.data.title}-image`}
           />
         </div>
       )
     }
 
     <div class="grow">
-      <h3 class="mb-1 text-lg font-medium">{entry.data.title}</h3>
+      <h3 class="mb-1 text-lg font-medium">
+        <span transition:name={entry.data.title}>{entry.data.title}</span>
+      </h3>
       <p class="text-muted-foreground mb-2 text-sm">{entry.data.description}</p>
 
       <div

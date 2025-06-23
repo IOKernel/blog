@@ -116,6 +116,7 @@ const tocSections = await getTOCSections(currentPostId)
           width={1200}
           height={630}
           class="col-span-full mx-auto w-full max-w-5xl object-cover"
+          transition:name={`${post.data.title}-image`}
         />
       )
     }
@@ -126,7 +127,7 @@ const tocSections = await getTOCSections(currentPostId)
           class="mb-2 scroll-mt-31 text-3xl leading-tight font-medium sm:text-4xl"
           id="post-title"
         >
-          {post.data.title}
+          <span transition:name={post.data.title}>{post.data.title}</span>
         </h1>
 
         <div
