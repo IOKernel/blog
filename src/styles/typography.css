@@ -25,6 +25,11 @@
   }
 }
 
+/* find class post-title and make it use accent color */
+:where(.post-title):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+  @apply text-accent group-hover:text-accent-foreground transition-colors;
+}
+
 @layer components {
   .prose {
     @apply text-foreground text-base leading-7;

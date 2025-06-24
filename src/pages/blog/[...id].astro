@@ -127,11 +127,12 @@ const tocSections = await getTOCSections(currentPostId)
           class="mb-2 scroll-mt-31 text-3xl leading-tight font-medium sm:text-4xl"
           id="post-title"
         >
-          <span transition:name={post.data.title}>{post.data.title}</span>
+          <span transition:name={post.data.title} class="post-title">{post.data.title}</span>
         </h1>
 
         <div
           class="text-muted-foreground divide-border mb-4 flex flex-col items-center justify-center divide-y text-xs sm:flex-row sm:flex-wrap sm:divide-x sm:divide-y-0 sm:text-sm"
+          transition:name={`${post.data.title}-post-info`}
         >
           {
             authors.length > 0 && (
@@ -194,7 +195,10 @@ const tocSections = await getTOCSections(currentPostId)
             )
           }
         </div>
-        <div class="flex flex-wrap justify-center gap-2">
+        <div
+          class="flex flex-wrap justify-center gap-2"
+          transition:name={`${post.data.title}-tags`}
+        >
           {
             post.data.tags &&
               post.data.tags.length > 0 &&

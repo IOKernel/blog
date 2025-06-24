@@ -79,7 +79,7 @@ export default defineConfig({
     },
     build: {
       rollupOptions: {
-        maxParallelFileOps: 2
+        maxParallelFileOps: 10
       }
     }
   },
