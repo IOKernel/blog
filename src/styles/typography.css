@@ -18,6 +18,8 @@
   h5,
   h6 {
     @apply text-balance;
+    /* apply accent color to the text here */
+
   }
 
   p {
@@ -28,6 +30,12 @@
 /* find class post-title and make it use accent color */
 :where(.post-title):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
   @apply text-accent group-hover:text-accent-foreground transition-colors;
+}
+
+/* apply accent color to h2 and h3 */
+:where(h1, h2) {
+  /* accent color but 50% lighter */
+  @apply text-ring;
 }
 
 @layer components {

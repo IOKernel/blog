@@ -89,7 +89,7 @@
   --accent-foreground: oklch(39.938% 0.09567 251.91);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.7444 0.0831 25.77);
-  --ring: oklch(0.7444 0.0831 25.77);
+  --ring: oklch(69.041% 0.13762 28.162);
 }
 
 [data-theme='dark'] {
@@ -106,7 +106,7 @@
   --accent-foreground: oklch(0.9455 0.0087 264.52);
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(0.5292 0.1428 47.06);
-  --ring: oklch(0.556 0 0);
+  --ring: oklch(0.8023 0.200362 45.0447);
 }
 
 @layer base {
