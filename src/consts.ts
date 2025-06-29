@@ -9,6 +9,7 @@ export const SITE: Site = {
   locale: 'en-US',
   featuredPostCount: 2,
   postsPerPage: 3,
+  googleAnalyticsId: 'G-XG009M1SCF',
 }
 
 export const NAV_LINKS: SocialLink[] = [
