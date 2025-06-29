@@ -21,6 +21,9 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   site: 'https://blog.cryptik.io',
+  image: {
+    layout: 'constrained',
+  },
   integrations: [
     expressiveCode({
       themes: ['github-light', 'github-dark'],
@@ -28,7 +31,7 @@ export default defineConfig({
       useDarkModeMediaQuery: false,
       themeCssSelector: (theme) => `[data-theme="${theme.name.split('-')[1]}"]`,
       defaultProps: {
-        wrap: true,
+        wrap: false,
         collapseStyle: 'collapsible-auto',
         overridesByLang: {
           'ansi,bat,bash,batch,cmd,console,powershell,ps,ps1,psd1,psm1,sh,shell,shellscript,shellsession,text,zsh':
